@@ -13,7 +13,7 @@ module OPE
     
     def draw
       n = @prng.generate(4, 128).unpack('H*')[0]
-      n.byteslice(0, 8).hex.to_f / 2**32
+      n[0, 8].hex.to_f / 2**32
     end
     
   end
