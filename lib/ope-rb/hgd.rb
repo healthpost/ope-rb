@@ -16,11 +16,11 @@ module OPE
       con, deltal = 57.56462733, 0.0078
       deltau, scale = 0.0034, 1.0e25
       
-      # Check validity of parameters.
-      if [nn1, nn2, kk].include?(Float::INFINITY) ||
-         (nn1 < 0 || nn2 < 0 || kk < 0 || kk > (nn1 + nn2))
-        raise 'Invalid parameters nn1, nn2 or kk'
-      end 
+      # # Check validity of parameters.
+      # if [nn1, nn2, kk].include?(Float::INFINITY) ||
+      #    (nn1 < 0 || nn2 < 0 || kk < 0 || kk > (nn1 + nn2))
+      #   raise 'Invalid parameters nn1, nn2 or kk'
+      # end 
       
       reject = true
       
