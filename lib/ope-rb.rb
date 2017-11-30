@@ -1,4 +1,4 @@
-require 'ope/native'
+# require 'ope/native'
 require 'ope-rb/version'
 require 'ope-rb/prng'
 require 'ope-rb/hgd'
@@ -85,7 +85,7 @@ module OPE
       seed = cipher_encrypt(digest)
       
       # Take only the desired no of bytes
-      seed = seed.byteslice(0, desired_bytes)
+      seed = seed[0, desired_bytes]
    
       # Convert the seed to a Bignum
       seed.unpack('H*')[0].hex
